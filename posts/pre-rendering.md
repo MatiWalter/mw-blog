@@ -1,11 +1,11 @@
 ---
-title: 'Two Forms of Pre-rendering'
-date: '2020-01-01'
+title: 'Métodos de pre-renderización'
+date: '2021-08-23'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Next.js tiene dos formas de pre-renderizar: **Generación estática** y **Renderización del lado del servidor**. La diferencia entre estos es **cuándo** se genera el HTML para una página.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+- **Generación estática** es el método de pre-renderización que genera el HTML en **Tiempo de compilado**. Luego el HTML pre-renderizado es _reutilizado_ en cada petición.
+- **Renderización del lado del servidor** es el método de pre-renderización que genera el HTML en **cada petición**.
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Importante, Next.js te permite **elegir** cual método de pre-renderización es usado para cada página. Puedes crear una aplicación "híbrida" usando Generación estática para gran parte de las páginas y Renderización del lado del servidor para otras.

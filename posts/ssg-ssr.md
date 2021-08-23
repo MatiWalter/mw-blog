@@ -1,19 +1,19 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
-date: '2020-01-02'
+title: 'Cuándo usar Generación estática vs Renderización del lado del servidor'
+date: '2021-08-23'
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+Next.js recomienda usar **Generación estática** (con o sin datos) siempre que sea posible porque su página se puede contruir una vez y ser servida por un CDN, lo que lo hace mucho más rápido que tener un servidor que renderice la página en cada solicitud.
 
-You can use Static Generation for many types of pages, including:
+Puedes usar Generación estática para muchos tipos de páginas, incluidas:
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
+- Páginas de Marketing
+- Blogs de posteos
+- Listados de productos de un E-commerce
+- Documentación y páginas de ayuda
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+Deberías preguntarte: "¿Puedo pre-renderizar esta página **antes** de una petición de algún usuario?" Si la respuesta es si, entonces deberias elegir Generación estática.
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
+Por otro lado, la Generación estática **no** es una buena idea si no puedes renderizar una página sin la petición de un usuario. Quizas tu página frecuentemente muestra datos actualizados, y su contenido cambia en cada petición.
 
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data
+En ese caso, puedes utilizar **Renderización del lado del servidor**. Sera mucho más lenta, pero la pre-renderización siempre estará actualizada. O puedes saltearte la pre-renderización y utilizar Javascript del lado del cliente para rellenar los datos.
